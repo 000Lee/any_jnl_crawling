@@ -48,6 +48,35 @@ AnyFive(office.anyfive.com)에서 업무관리 데이터를 크롤링하여 Mari
 [5단계] 이미지 크롤러 실행
 ```
 
+### 이슈
+- AnyFiveJnlCrawler_plus는 AnyFiveJnlCrawler의 초기 코드에서 생긴 doc_body가 잘리는 이슈를 해결하기 위한 코드로 이에대한 추가 보완점들을 AnyFiveJnlCrawler에 적용하였으니 별도로 실행하지 않습니다.
+- java 파일 중 AnyFiveJnlCrawler로 시작하는 파일은 전사업무보고 게시판용 입니다. 각각의 게시판마다 파일명이 다릅니다.
+- 각 게시판 코드는 AnyFiveJnlCrawler를 기반으로 하여 일부만 수정하였습니다. 
+```
+// 0. 게시판 이름
+- pjt // PJT진척보고
+- ip // IP솔루션팀 
+- tech // 기술지원팀 
+- biz // 경영기획팀 
+
+// 1. 게시판 선택
+By.xpath("//li[@data-lblnm='기술지원팀']")
+'기술지원팀'을 각 게시판에 맞게 변경하기
+
+// 2. 테이블명
+tech_jnl_documents  →  새이름_jnl_documents
+tech_jnl_comments   →  새이름_jnl_comments
+
+// 3. 폴더명 
+tech_jnl_img_       →  새이름_jnl_img_
+tech_jnl_attachments_ → 새이름_jnl_attachments_
+
+// 4. 크롤링 대상 문서 ID 목록 부분에 각 게시판의 문서ID들을 붙여넣기
+
+// 5. DB
+CREATE TABLE 새이름_jnl_documents LIKE jnl_documents;
+CREATE TABLE 새이름_jnl_comments LIKE jnl_comments;
+```
 ---
 
 ## 환경 설정
