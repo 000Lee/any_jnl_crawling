@@ -59,16 +59,16 @@ biz // 경영기획팀<br>
 - 각 게시판 코드는 AnyFiveJnlCrawler를 기반으로 하여 일부만 수정하였습니다. 
 ```
 // 1. 게시판 선택
-By.xpath("//li[@data-lblnm='기술지원팀']")
-'기술지원팀'을 각 게시판에 맞게 변경하기
+By.xpath("//li[@data-lblnm='전사업무보고']")
+'전사업무보고'를 각 게시판에 맞게 변경하기
 
 // 2. 테이블명
-tech_jnl_documents  →  새이름_jnl_documents
-tech_jnl_comments   →  새이름_jnl_comments
+jnl_documents  →  새이름_jnl_documents
+jnl_comments   →  새이름_jnl_comments
 
 // 3. 폴더명 
-tech_jnl_img_       →  새이름_jnl_img_
-tech_jnl_attachments_ → 새이름_jnl_attachments_
+jnl_img_       →  새이름_jnl_img_
+jnl_attachments_ → 새이름_jnl_attachments_
 
 // 4. 크롤링 대상 문서 ID 목록 부분에 각 게시판의 문서ID들을 붙여넣기
 
