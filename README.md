@@ -77,8 +77,8 @@ tech_jnl_attachments_ → 새이름_jnl_attachments_
 CREATE TABLE 새이름_jnl_documents LIKE jnl_documents;
 CREATE TABLE 새이름_jnl_comments LIKE jnl_comments;
 ```
-- 누락문서 처리
-  /n 업무관리/각 게시판 이름/업무관리 문서ID 가져오기.ipynb ->누락된문서 ID 찾기.ipynb-> 추출된 ID로 크롤링하기.
+- 누락문서 처리 <br>
+업무관리/각 게시판 이름/업무관리 문서ID 가져오기.ipynb ->누락된문서 ID 찾기.ipynb-> 추출된 ID로 크롤링하기.
 
 ---
 
