@@ -78,8 +78,8 @@ jnl_attachments_ → 새이름_jnl_attachments_
 CREATE TABLE 새이름_jnl_documents LIKE jnl_documents;
 CREATE TABLE 새이름_jnl_comments LIKE jnl_comments;
 ```
-- 누락문서 처리 <br>
-업무관리/각 게시판 이름/업무관리 문서ID 가져오기.ipynb ->누락된문서 ID 찾기.ipynb-> 추출된 ID로 크롤링(자바).
+- 🔎누락문서 처리 <br>
+(파이썬) 업무관리/각 게시판 이름/업무관리 문서ID 가져오기.ipynb ->누락된문서 ID 찾기.ipynb-> (자바) 추출된 ID로 크롤링.
 - ⭐자바 크롤링 코드는 [any_crawling](https://github.com/000Lee/any_crawling.git)에 있습니다.⭐<br>
 깃허브 any_crawling/src/main/java/org/example/<br>
 전사업무보고<br>
