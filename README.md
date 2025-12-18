@@ -1,6 +1,7 @@
 # AnyFive 업무관리 크롤러
 AnyFive(office.anyfive.com)에서 업무관리 데이터를 크롤링하여 MariaDB에 저장하는 도구입니다.<br>
-⭐자바 크롤링 코드는 [any_crawling](https://github.com/000Lee/any_crawling.git)에 있습니다.⭐<br>
+⭐자바 크롤링 코드는 [any_crawling](https://github.com/000Lee/any_crawling.git)에 있습니다.⭐<br> 
+관련 설명은 이 페이지를, 실제 코드는 any_crawling을 참조해주세요<br>
 이 페이지에는 파이썬 코드만 업로드되어 있으며, 이는 문서 ID 추출용 보조 스크립트입니다.
 
 ## 📋 목차
