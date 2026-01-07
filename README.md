@@ -27,7 +27,8 @@ AnyFive(office.anyfive.com)에서 업무관리 데이터를 크롤링하여 Mari
 
 ## 개요
 
-이 프로젝트는 4개의 프로그램으로 구성되어 있습니다:
+이 프로젝트는 5개의 프로그램으로 구성되어 있습니다:
+
 
 | 순서 | 파일명 | 언어 | 역할 |
 |:----:|--------|:----:|------|
@@ -35,6 +36,8 @@ AnyFive(office.anyfive.com)에서 업무관리 데이터를 크롤링하여 Mari
 | 2 | `AnyFiveJnlCrawler.java` | Java | 문서 메타데이터 + 본문(+ 이미지 경로 변경) + 의견 저장 |
 | 3 | `AnyFiveJnlCrawler_attaches.java` | Java | 첨부파일 다운로드 + 첨부파일 정보 저장 |
 | 4 | `AnyFiveJnlCrawler_img.java` | Java | 본문 내 이미지 다운로드 |
+| 5 | `AnyFiveJnlListCrawler.java` | Java | 목록에 있는 정보 크롤링 |
+
 
 ### 실행 순서
 
@@ -48,6 +51,8 @@ AnyFive(office.anyfive.com)에서 업무관리 데이터를 크롤링하여 Mari
 [4단계] 첨부파일 크롤러 실행
     ↓
 [5단계] 이미지 크롤러 실행
+
+목록 크롤러는 별도의 테이블에 저장되므로 순서에 영향을 받지 않습니다.
 ```
 
 ### 이슈
@@ -462,6 +467,13 @@ private static final String DOWNLOAD_BASE_DIR = "C:/Users/사용자명/Downloads
 
 3. 실행
 
+---
+### Step 5: 목록 정보 수집 (Java)
+1. `AnyFiveJnlListCrawler.java` 열기
+
+2. 설정값 수정 (여기부터 수정하세요 ~ 여기까지 수정하세요)
+
+3. 실행
 ---
 
 ## 설정값 가이드
